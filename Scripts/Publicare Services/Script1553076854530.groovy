@@ -13,3 +13,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://publicare.ch/')
+
+WebUI.click(findTestObject('Object Repository/servicesOR/Page_HOME  Publicare/a_Dienstleistungen'))
+
+WebUI.click(findTestObject('Object Repository/servicesOR/Page_services  Publicare/a_Beratung'))
+
+WebUI.click(findTestObject('Object Repository/servicesOR/Page_Beratung  Publicare/a_Dienstleistungen'))
+
+WebUI.click(findTestObject('Object Repository/servicesOR/Page_services  Publicare/a_Lieferant'))
+
+WebUI.click(findTestObject('Object Repository/servicesOR/Page_Lieferant  Publicare/a_Dienstleistungen'))
+
+WebUI.closeBrowser()
+
