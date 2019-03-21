@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-
+System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/workspace/publicare-katalon-git/Drivers/chromedriver");
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://publicare.ch/')
