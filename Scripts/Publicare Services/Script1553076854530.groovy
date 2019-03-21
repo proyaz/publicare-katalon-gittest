@@ -14,6 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 
+WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://publicare.ch/')
 
@@ -28,4 +29,5 @@ WebUI.click(findTestObject('Object Repository/servicesOR/Page_services  Publicar
 WebUI.click(findTestObject('Object Repository/servicesOR/Page_Lieferant  Publicare/a_Dienstleistungen'))
 
 WebUI.closeBrowser()
+
 
