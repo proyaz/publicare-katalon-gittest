@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome")//WebDriver driver = new ChromeDriver();// the magic lineDriverFactory.changeWebDriver(driver)WebUI.navigateToUrl('https://publicare.ch/')
+System.setProperty("webdriver.driver", "/usr/bin/google-chrome")//WebDriver driver = new ChromeDriver();// the magic lineDriverFactory.changeWebDriver(driver)WebUI.navigateToUrl('https://publicare.ch/')
 //WebUI.openBrowser('https://publicare.ch/')
 
 WebUI.navigateToUrl('https://publicare.ch/')
