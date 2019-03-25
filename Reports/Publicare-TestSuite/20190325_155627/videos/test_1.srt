@@ -1,0 +1,32 @@
+1
+00:00:00,460 --> 00:00:00,462
+1. openBrowser("https://publicare.ch/")
+
+2
+00:00:24,714 --> 00:00:24,716
+5. navigateToUrl("https://publicare.ch/")
+
+3
+00:00:29,219 --> 00:00:29,221
+9. click(findTestObject("Object Repository/servicesOR/Page_HOME  Publicare/a_Dienstleistungen"))
+
+4
+00:00:34,226 --> 00:00:34,228
+13. click(findTestObject("Object Repository/servicesOR/Page_services  Publicare/a_Beratung"))
+
+5
+00:00:39,691 --> 00:00:39,693
+17. click(findTestObject("Object Repository/servicesOR/Page_Beratung  Publicare/a_Dienstleistungen"))
+
+6
+00:00:41,665 --> 00:00:41,666
+21. click(findTestObject("Object Repository/servicesOR/Page_services  Publicare/a_Lieferant"))
+
+7
+00:00:45,486 --> 00:00:45,488
+25. click(findTestObject("Object Repository/servicesOR/Page_Lieferant  Publicare/a_Dienstleistungen"))
+
+8
+00:00:48,316 --> 00:00:48,317
+29. closeBrowser()
+

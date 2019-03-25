@@ -1,0 +1,27 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Publicare-TestSuite,Chrome 73.0.3683.86,,2019-03-25 15:56:36,2019-03-25 15:58:12,1m - 36.393s,PASSED
+,,,,,,
+Test Cases/Publicare Services,Chrome 73.0.3683.86,,2019-03-25 15:56:38,2019-03-25 15:57:29,51.679s,PASSED
+"openBrowser(""https://publicare.ch/"")",Chrome 73.0.3683.86,,2019-03-25 15:56:39,2019-03-25 15:57:03,24.255s,PASSED
+"navigateToUrl(""https://publicare.ch/"")",Chrome 73.0.3683.86,,2019-03-25 15:57:03,2019-03-25 15:57:07,4.505s,PASSED
+"click(findTestObject(""Object Repository/servicesOR/Page_HOME  Publicare/a_Dienstleistungen""))",Chrome 73.0.3683.86,,2019-03-25 15:57:07,2019-03-25 15:57:12,5.006s,PASSED
+"click(findTestObject(""Object Repository/servicesOR/Page_services  Publicare/a_Beratung""))",Chrome 73.0.3683.86,,2019-03-25 15:57:12,2019-03-25 15:57:18,5.464s,PASSED
+"click(findTestObject(""Object Repository/servicesOR/Page_Beratung  Publicare/a_Dienstleistungen""))",Chrome 73.0.3683.86,,2019-03-25 15:57:18,2019-03-25 15:57:20,1.974s,PASSED
+"click(findTestObject(""Object Repository/servicesOR/Page_services  Publicare/a_Lieferant""))",Chrome 73.0.3683.86,,2019-03-25 15:57:20,2019-03-25 15:57:24,3.822s,PASSED
+"click(findTestObject(""Object Repository/servicesOR/Page_Lieferant  Publicare/a_Dienstleistungen""))",Chrome 73.0.3683.86,,2019-03-25 15:57:24,2019-03-25 15:57:27,2.829s,PASSED
+closeBrowser(),Chrome 73.0.3683.86,,2019-03-25 15:57:27,2019-03-25 15:57:27,0.735s,PASSED
+,,,,,,
+Test Cases/Publicare Products,Chrome 73.0.3683.86,,2019-03-25 15:57:29,2019-03-25 15:58:12,42.703s,PASSED
+"openBrowser(""https://publicare.ch/"")",Chrome 73.0.3683.86,,2019-03-25 15:57:30,2019-03-25 15:57:39,9.187s,PASSED
+"navigateToUrl(""https://publicare.ch/"")",Chrome 73.0.3683.86,,2019-03-25 15:57:39,2019-03-25 15:57:42,2.998s,PASSED
+"click(findTestObject(""Object Repository/productsOR/Page_HOME  Publicare/a_Produkte""))",Chrome 73.0.3683.86,,2019-03-25 15:57:42,2019-03-25 15:57:46,4.207s,PASSED
+"click(findTestObject(""Object Repository/productsOR/Page_Product  Publicare/a_Ergnzende Produkte""))",Chrome 73.0.3683.86,,2019-03-25 15:57:46,2019-03-25 15:57:49,2.601s,PASSED
+"click(findTestObject(""Object Repository/productsOR/Page_Ergnzende Produkte  Publicare/a_Blutzuckermessungen""))",Chrome 73.0.3683.86,,2019-03-25 15:57:49,2019-03-25 15:57:52,3.270s,PASSED
+"click(findTestObject(""Object Repository/productsOR/Page_Blutzuckermessungen  Publicare/a_Lanzetten und Nadeln""))",Chrome 73.0.3683.86,,2019-03-25 15:57:52,2019-03-25 15:57:55,3.432s,PASSED
+"click(findTestObject(""Object Repository/productsOR/Page_Lanzetten und Nadeln  Publicare/a_Mustersets""))",Chrome 73.0.3683.86,,2019-03-25 15:57:55,2019-03-25 15:57:58,2.697s,PASSED
+"click(findTestObject(""Object Repository/productsOR/Page_Musterset  Publicare/a_Produkte""))",Chrome 73.0.3683.86,,2019-03-25 15:57:58,2019-03-25 15:58:00,2.253s,PASSED
+"click(findTestObject(""Object Repository/productsOR/Page_Product  Publicare/a_Inkontinenz""))",Chrome 73.0.3683.86,,2019-03-25 15:58:00,2019-03-25 15:58:02,2.098s,PASSED
+"click(findTestObject(""Object Repository/productsOR/Page_Inkontinenz  Publicare/a_Aufsaugende Produkte""))",Chrome 73.0.3683.86,,2019-03-25 15:58:02,2019-03-25 15:58:05,3.086s,PASSED
+"click(findTestObject(""Object Repository/productsOR/Page_Aufsaugende Produkte  Publicare/a_Inkontinenz""))",Chrome 73.0.3683.86,,2019-03-25 15:58:05,2019-03-25 15:58:08,2.229s,PASSED
+"click(findTestObject(""Object Repository/productsOR/Page_Inkontinenz  Publicare/a_Alle Produkte""))",Chrome 73.0.3683.86,,2019-03-25 15:58:08,2019-03-25 15:58:09,1.592s,PASSED
+closeBrowser(),Chrome 73.0.3683.86,,2019-03-25 15:58:09,2019-03-25 15:58:10,0.712s,PASSED
