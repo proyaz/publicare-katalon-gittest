@@ -25,7 +25,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 ChromeOptions optionsBeta = new ChromeOptions();
 optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/chromedriver");
 DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+capabilities.setCapability(ChromeOptions.CAPABILITY, optionsBeta);
 ChromeDriver driver = new ChromeDriver(capabilities);
 DriverFactory.changeWebDriver(driver)
 
