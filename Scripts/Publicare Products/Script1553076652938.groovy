@@ -13,18 +13,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-import org.openqa.selenium.WebDriver
+// Explicitly set the path of Chrome Driver binary
+System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/tools/chromedriver/chromedriver");
+
+// Explicitly set the path of Chrome Browser binary
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
-
-//System.setProperty("webdriver.driver", "/usr/bin/google-chrome")//WebDriver driver = new ChromeDriver();// the magic lineDriverFactory.changeWebDriver(driver)WebUI.navigateToUrl('https://publicare.ch/')
-System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/tools/chromedriver/chromedriver.exe");
+import org.openqa.selenium.remote.DesiredCapabilities
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 ChromeOptions optionsBeta = new ChromeOptions();
-optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/chromedriver.exe");
-WebDriver driver = new ChromeDriver();
-driver.get("https://publicare.ch/")
-//WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
+optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/chromedriver");
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+ChromeDriver driver = new ChromeDriver(capabilities);
+DriverFactory.changeWebDriver(driver)
 
 WebUI.navigateToUrl('https://publicare.ch/')
 
