@@ -13,8 +13,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/workspace/publicare-katalon-git/Drivers/chromedriver");
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.chrome.ChromeDriver
+import org.openqa.selenium.chrome.ChromeOptions
+
 //System.setProperty("webdriver.driver", "/usr/bin/google-chrome")//WebDriver driver = new ChromeDriver();// the magic lineDriverFactory.changeWebDriver(driver)WebUI.navigateToUrl('https://publicare.ch/')
+System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/tools/chromedriver/chromedriver");
+
+ChromeOptions optionsBeta = new ChromeOptions();
+optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/chromedriver");
+WebDriver driver = new ChromeDriver();
+driver.get("https://publicare.ch/")
 WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.navigateToUrl('https://publicare.ch/')
