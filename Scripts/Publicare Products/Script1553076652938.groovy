@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 //System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/workspace/publicare-katalon-git/Drivers/chromedriver");
 //System.setProperty("webdriver.driver", "/usr/bin/google-chrome")//WebDriver driver = new ChromeDriver();// the magic lineDriverFactory.changeWebDriver(driver)WebUI.navigateToUrl('https://publicare.ch/')
-WebUI.openBrowser('')
+WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.navigateToUrl('https://publicare.ch/')
 
