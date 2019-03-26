@@ -18,13 +18,13 @@ import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 
 //System.setProperty("webdriver.driver", "/usr/bin/google-chrome")//WebDriver driver = new ChromeDriver();// the magic lineDriverFactory.changeWebDriver(driver)WebUI.navigateToUrl('https://publicare.ch/')
-System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/tools/chromedriver/chromedriver");
+System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/tools/chromedriver/chromedriver.exe");
 
 ChromeOptions optionsBeta = new ChromeOptions();
-optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/chromedriver");
+optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/chromedriver.exe");
 WebDriver driver = new ChromeDriver();
 driver.get("https://publicare.ch/")
-WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.navigateToUrl('https://publicare.ch/')
 
