@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 // Explicitly set the path of Chrome Driver binary
-System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/tools/chromedriver/chromedriver");
+System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
 
 // Explicitly set the path of Chrome Browser binary
 import org.openqa.selenium.chrome.ChromeDriver
@@ -30,7 +30,7 @@ optionsBeta = new ChromeOptions();
 //optionsBeta.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 optionsBeta.addArguments("--no-sandbox"); // Bypass OS security model
 optionsBeta.addArguments('--headless');
-optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/chromedriver");
+optionsBeta.setBinary("/usr/bin/google-chrome");
 DesiredCapabilities capabilities = new DesiredCapabilities();
 capabilities.setCapability(ChromeOptions.CAPABILITY, optionsBeta);
 
