@@ -3,3 +3,6 @@
 .svn/
 .project.txt
 .project
+/bin/
+/Reports
+/Checkpoints
