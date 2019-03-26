@@ -22,7 +22,7 @@ import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.remote.DesiredCapabilities
 import com.kms.katalon.core.webui.driver.DriverFactory
 
-ChromeOptions optionsBeta = new ChromeOptions();
+optionsBeta = new ChromeOptions();
 optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/chromedriver");
 DesiredCapabilities capabilities = new DesiredCapabilities();
 capabilities.setCapability(ChromeOptions.CAPABILITY, optionsBeta);
