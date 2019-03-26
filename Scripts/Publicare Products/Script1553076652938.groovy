@@ -23,6 +23,12 @@ import org.openqa.selenium.remote.DesiredCapabilities
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 optionsBeta = new ChromeOptions();
+optionsBeta.addArguments("start-maximized"); // open Browser in maximized mode
+optionsBeta.addArguments("disable-infobars"); // disabling infobars
+optionsBeta.addArguments("--disable-extensions"); // disabling extensions
+optionsBeta.addArguments("--disable-gpu"); // applicable to windows os only
+optionsBeta.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+optionsBeta.addArguments("--no-sandbox"); // Bypass OS security model
 optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/chromedriver");
 DesiredCapabilities capabilities = new DesiredCapabilities();
 capabilities.setCapability(ChromeOptions.CAPABILITY, optionsBeta);
