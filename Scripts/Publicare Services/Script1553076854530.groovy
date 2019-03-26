@@ -22,23 +22,23 @@ import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.remote.DesiredCapabilities
 import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.WebDriver
+
 optionsBeta = new ChromeOptions();
 //optionsBeta.addArguments("start-maximized"); // open Browser in maximized mode
 //optionsBeta.addArguments("disable-infobars"); // disabling infobars
 //optionsBeta.addArguments("--disable-extensions"); // disabling extensions
 //optionsBeta.addArguments("--disable-gpu"); // applicable to windows os only
-//optionsBeta.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+optionsBeta.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 optionsBeta.addArguments("--no-sandbox"); // Bypass OS security model
 optionsBeta.addArguments('--headless');
 optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/chromedriver");
 DesiredCapabilities capabilities = new DesiredCapabilities();
 capabilities.setCapability(ChromeOptions.CAPABILITY, optionsBeta);
 
-WebDriver driver = new ChromeDriver(capabilities);
+ChromeDriver driver = new ChromeDriver(capabilities);
 DriverFactory.changeWebDriver(driver)
  
-driver.get("https://google.com");
+ 
 
 WebUI.navigateToUrl('https://publicare.ch/')
 
