@@ -22,7 +22,7 @@ import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.remote.DesiredCapabilities
 import com.kms.katalon.core.webui.driver.DriverFactory
-
+import org.openqa.selenium.WebDriver
 optionsBeta = new ChromeOptions();
 //optionsBeta.addArguments("start-maximized"); // open Browser in maximized mode
 //optionsBeta.addArguments("disable-infobars"); // disabling infobars
@@ -35,10 +35,10 @@ optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/chromedriver");
 DesiredCapabilities capabilities = new DesiredCapabilities();
 capabilities.setCapability(ChromeOptions.CAPABILITY, optionsBeta);
 
-ChromeDriver driver = new ChromeDriver(capabilities);
+WebDriver driver = new ChromeDriver(capabilities);
 DriverFactory.changeWebDriver(driver)
  
- 
+driver.get("https://google.com");
 
 WebUI.navigateToUrl('https://publicare.ch/')
 
