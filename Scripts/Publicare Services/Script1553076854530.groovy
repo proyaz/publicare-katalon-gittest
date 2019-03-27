@@ -14,8 +14,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
  
-// Explicitly set the path of Chrome Driver binary
-//System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
+
+ 
 
 // Explicitly set the path of Chrome Browser binary
 import org.openqa.selenium.chrome.ChromeDriver
@@ -23,7 +23,8 @@ import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.remote.DesiredCapabilities
 import com.kms.katalon.core.webui.driver.DriverFactory
 
-
+// Explicitly set the path of Chrome Driver binary
+System.setProperty("webdriver.chrome.driver","\\usr\\bin\\chromedriver");
 ChromeOptions optionsBeta = new ChromeOptions();
 //optionsBeta.addArguments("start-maximized"); // open Browser in maximized mode
 //optionsBeta.addArguments("disable-infobars"); // disabling infobars
