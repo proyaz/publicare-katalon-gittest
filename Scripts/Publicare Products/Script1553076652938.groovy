@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 // Explicitly set the path of Chrome Driver binary
-System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/tools/chromedriver/google-chrome");
+//System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/tools/chromedriver/google-chrome");
 
 // Explicitly set the path of Chrome Browser binary
 import org.openqa.selenium.chrome.ChromeDriver
