@@ -24,7 +24,7 @@ import org.openqa.selenium.remote.DesiredCapabilities
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 // Explicitly set the path of Chrome Driver binary
-System.setProperty("webdriver.chrome.driver","\\usr\\bin\\chromedriver");
+System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 ChromeOptions optionsBeta = new ChromeOptions();
 //optionsBeta.addArguments("start-maximized"); // open Browser in maximized mode
 //optionsBeta.addArguments("disable-infobars"); // disabling infobars
