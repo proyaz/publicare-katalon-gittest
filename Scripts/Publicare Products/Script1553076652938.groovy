@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 // Explicitly set the path of Chrome Driver binary
-//System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/tools/chromedriver/google-chrome");
+System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/.katalon/6.1.0/Katalon_Studio_Linux_64-6.1.0/configuration/resources/drivers/chromedriver_linux64/chromedriver");
 
 // Explicitly set the path of Chrome Browser binary
 import org.openqa.selenium.chrome.ChromeDriver
@@ -37,7 +37,7 @@ capabilities.setCapability(ChromeOptions.CAPABILITY, optionsBeta);
 
 ChromeDriver driver = new ChromeDriver(capabilities);*/
 ChromeDriver driver = new ChromeDriver(optionsBeta);
-//DriverFactory.changeWebDriver(driver)
+DriverFactory.changeWebDriver(driver)
 
 WebUI.navigateToUrl('https://publicare.ch/')
 
