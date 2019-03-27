@@ -29,11 +29,10 @@ ChromeOptions optionsBeta = new ChromeOptions();
 //optionsBeta.addArguments("start-maximized"); // open Browser in maximized mode
 //optionsBeta.addArguments("disable-infobars"); // disabling infobars
 //optionsBeta.addArguments("--disable-extensions"); // disabling extensions
-//optionsBeta.addArguments("--disable-gpu"); // applicable to windows os only
+optionsBeta.addArguments("--disable-gpu"); // applicable to windows os only
 optionsBeta.addArguments("--no-sandbox"); // Bypass OS security model
 optionsBeta.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-
-//optionsBeta.addArguments('--headless');
+optionsBeta.addArguments('--headless');
 //optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/google-chrome");
 /*DesiredCapabilities capabilities = new DesiredCapabilities();
 capabilities.setCapability(ChromeOptions.CAPABILITY, optionsBeta);
