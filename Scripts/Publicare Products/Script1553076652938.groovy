@@ -31,7 +31,7 @@ optionsBeta.addArguments("--no-sandbox"); // Bypass OS security model
 optionsBeta.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 
 //optionsBeta.addArguments('--headless');
-//optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/google-chrome");
+ optionsBeta.setBinary("/var/jenkins_home/.katalon/6.1.0/Katalon_Studio_Linux_64-6.1.0/configuration/resources/drivers/chromedriver_linux64/chromedriver");
 /*DesiredCapabilities capabilities = new DesiredCapabilities();
 capabilities.setCapability(ChromeOptions.CAPABILITY, optionsBeta);
 
