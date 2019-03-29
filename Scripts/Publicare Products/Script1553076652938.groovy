@@ -13,33 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-// Explicitly set the path of Chrome Driver binary
-//System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/tools/chromedriver/google-chrome");
-
-// Explicitly set the path of Chrome Browser binary
-import org.openqa.selenium.chrome.ChromeDriver
-import org.openqa.selenium.chrome.ChromeOptions
-import org.openqa.selenium.remote.DesiredCapabilities
-import com.kms.katalon.core.webui.driver.DriverFactory
-
-// Explicitly set the path of Chrome Driver binary
-System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
-ChromeOptions optionsBeta = new ChromeOptions();
-//optionsBeta.addArguments("start-maximized"); // open Browser in maximized mode
-//optionsBeta.addArguments("disable-infobars"); // disabling infobars
-//optionsBeta.addArguments("--disable-extensions"); // disabling extensions
-//optionsBeta.addArguments("--disable-gpu"); // applicable to windows os only
-optionsBeta.addArguments("--no-sandbox"); // Bypass OS security model
-optionsBeta.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-
-//optionsBeta.addArguments('--headless');
-//optionsBeta.setBinary("/var/jenkins_home/tools/chromedriver/google-chrome");
-/*DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability(ChromeOptions.CAPABILITY, optionsBeta);
-
-ChromeDriver driver = new ChromeDriver(capabilities);*/
-ChromeDriver driver = new ChromeDriver(optionsBeta);
-//DriverFactory.changeWebDriver(driver)
+WebUI.openBrowser('');
 
 WebUI.navigateToUrl('https://publicare.ch/')
 
